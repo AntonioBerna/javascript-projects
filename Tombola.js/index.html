@@ -1,0 +1,25 @@
+<!--
+* Tombola js Versione Alpha 1.0
+* @copyright 	Copyright (c) 2017, Antonio Bernardini
+* @author       Antonio Bernardini
+-->
+<html>
+<head>
+    <title>Tombolata by Antonio Bernardini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="tombtit">TOMBOLATA</h1><br>
+    <table> <script src="table.js"></script> </table>
+    <form>
+        <div style="margin: 3px 0px;"><br><br><br>
+            <input class="button" type="button" value="Numero" onclick="extractRandom()"/>
+            <input class="button" type="button" value="Reset [F5]" onclick="if (confirm('Sicuro?')) window.location.reload()"/>
+            <input class="button" type="button" value="Stampa" onclick="window.print()"/>
+            <input class="button" type="button" value="Titolo" onclick="chgname()"/>
+            <input class="button" type="button" value="Schermo intero [F11]" onclick="alert('premi F11')"/>
+        </div>
+    </form>
+    <script src="snow.js"></script>
+</body>
+</html>

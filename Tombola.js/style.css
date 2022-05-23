@@ -1,0 +1,65 @@
+body, table {
+    font-family: Arial;
+}
+
+body {
+    color: #FF0000;
+    text-align: center;
+    border: 5px;
+    background-image: url(images/natale3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-size: 170%;
+    text-shadow: 0 2px 5px #FF0000;
+    letter-spacing: 7px;
+}
+
+table {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+td {
+    text-align: center;
+    font-size: 250%;
+    cursor: pointer;
+    color: #000;
+    border-radius: 15px;
+}
+
+td.blink {
+    background-color: red;
+    color: #FFFF99;
+}
+
+td.on {
+    color: #fff;
+    background-color: blue;
+}
+
+textarea {
+    color: #fff;
+    background-color: #fff;
+    overflow: visible;
+    font-weight: bold;
+    width: 90%;
+}
+
+.button {
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 10px 20px;
+    border: solid 1px #0076a3;
+    background: #0095cd;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
