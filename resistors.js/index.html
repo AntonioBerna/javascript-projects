@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Valore Resistenze</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js "></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <fieldset>
+            <table class="dataTable">
+                <tr>
+                    <td colspan="4" style="z-index: -1;">
+                        <svg id="left" width="75" height="75">
+                            <line x1="70" y1="50" x2="50" y2="50"/>
+                            <line x1="50" y1="80" x2="50" y2="50"/>
+                        </svg>
+                        <svg id="r1" width="25" height="40">
+                            <line x1="15" y1="0" x2="15" y2="40"/>
+                        </svg>
+                        <svg id="r2" width="25" height="40">
+                            <line x1="10" y1="0" x2="10" y2="40"/>
+                        </svg>
+                        <svg id="r3" width="18" height="40">
+                            <line x1="5" y1="0" x2="5" y2="40"/>
+                        </svg>
+                        <svg id="r4" width="40" height="40">
+                            <line x1="5" y1="0" x2="5" y2="40"/>
+                        </svg>
+                        <svg id="right" width="75" height="75">
+                            <line x1="0" y1="50" x2="20" y2="50"/>
+                            <line x1="20" y1="50" x2="20" y2="80"/>
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="button button1" onclick="showOhm()">Calcola</button>
+                    </td>
+                    <td colspan="3">
+                        <p id="oTableData"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="button button1" name="firstRing" id="ring1" onchange="changeRingOne()">
+                            <option value="10" select="selected">Banda 1</option>
+                            <option value="1" class="brown">marrone</option>
+                            <option value="2" class="red">rosso</option>
+                            <option value="3" class="orange">arancio</option>
+                            <option value="4" class="yellow">giallo</option>
+                            <option value="5" class="green">verde</option>
+                            <option value="6" class="blue">blu</option>
+                            <option value="7" class="purple">viola</option>
+                            <option value="8" class="gray">grigio</option>
+                            <option value="9" class="white">bianco</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="button button1" name="secondRing" id="ring2" onchange="changeRingTwo()">
+                            <option value="10" select="selected">Banda 2</option>
+                            <option value="0" class="black">nero</option>
+                            <option value="1" class="brown">marrone</option>
+                            <option value="2" class="red">rosso</option>
+                            <option value="3" class="orange">arancio</option>
+                            <option value="4" class="yellow">giallo</option>
+                            <option value="5" class="green">verde</option>
+                            <option value="6" class="blue">blu</option>
+                            <option value="7" class="purple">viola</option>
+                            <option value="8" class="gray">grigio</option>
+                            <option value="9" class="white">bianco</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="button button1" name="thirdRing" id="ring3" onchange="changeRingThree()">
+                            <option value="10" select="selected">Banda 3</option>
+                            <option value="0" class="black">nero</option>
+                            <option value="1" class="brown">marrone</option>
+                            <option value="2" class="red">rosso</option>
+                            <option value="3" class="orange">arancio</option>
+                            <option value="4" class="yellow">giallo</option>
+                            <option value="5" class="green">verde</option>
+                            <option value="6" class="blue">blu</option>
+                            <option value="7" class="purple">viola</option>
+                            <option value="8" class="gray">grigio</option>
+                            <option value="9" class="white">bianco</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="button button1" name="fourthRing" id="ring4" onchange="changeRingFour()">
+                            <option value="0" select="selected">Banda 4</option>
+                            <option value="1" style="background-color:gold;">oro</option>
+                            <option value="2" style="background-color:silver;">argento</option>
+                            <option value="3" style="background-color:lemonchiffon;">nessuno</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div id="dialog" title="Errore"></div>
+        </fieldset>
+        <script src="script.js"></script>
+    </body>
+</html>
