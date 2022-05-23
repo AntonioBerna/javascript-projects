@@ -1,2 +1,2 @@
 # javascript-projects
-Progetti Javascript (HTML5)
+Progetti Javascript (HTML5) ⚡️
