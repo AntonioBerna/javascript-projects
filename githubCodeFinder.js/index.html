@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Github Code Finder</title>
+
+	<!-- CSS Links -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<meta name="viewport" content="width=devide-width, initial-scale=1.0"/>
+
+	<!-- Javascript Links -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+</head>
+<body>
+	<header>
+		<span class="fa fa-github github"></span>
+		<h1>Github Code Finder</h1>
+	</header>
+	<form class="form">
+		<div>
+			<span class="fa fa-search"></span>
+			<input type="text" placeholder="Username" id="username">
+		</div>
+		<div>
+			<span class="fa fa-code-fork"></span>
+			<input type="text" placeholder="Repository Name" id="repository">
+		</div>
+		<div>
+			<span class="fa fa-file"></span>
+			<input type="text" placeholder="File Name" id="filename"></input>
+		</div>
+		<button class="get-btn">Get</button>
+	</form>
+	<div class="filename"></div>
+	<div class="text-editor"><pre></pre></div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
