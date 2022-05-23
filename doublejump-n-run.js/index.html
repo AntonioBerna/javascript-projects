@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Double Jump 'n' run</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="field">
+            <div id="ground"></div>
+            
+            <div id="playerTop" class="player"></div>
+            <div id="playerBottom" class="player"></div>
+            
+            <p id="controlsTextTop" class="controlsText"></p>
+            <p id="controlsTextBottom" class="controlsText"></p>
+        </div>
+
+        <table id="UITable">
+            <tr>
+                <td id="livesText" class="UIText"></td>
+                <td id="scoreText" class="UIText"></td>
+                <td id="newKeyCountdownText" class="UIText"></td>
+            </tr>
+        </table>
+            
+        <table id="touchControlsTable">
+            <tr>
+                <td class="touchControls button">1</td>
+                <td class="touchControls button">2</td>
+                <td class="touchControls button">3</td>
+                <td class="touchControls button">4</td>
+            </tr>
+        </table>
+            
+        <div id="overlay"></div>
+        <div id="menu">            
+            <div id="menuContainer">
+                <!--<button id="switchTouchButton" class="button" onclick="switchTouch()">👆</button>-->
+                
+                <h1 id="menuHeader">DOUBLE JUMP 'N' RUN</h1>
+                <p id="menuScore"></p>
+                <button id="hardModeButton" class="modeButton" onclick="changeMode('hard')">HARD</button>
+                <button id="normalModeButton" class="modeButton selectedMode" onclick="changeMode('normal')">NORMAL</button>
+                <button id="easyModeButton" class="modeButton" onclick="changeMode('easy')">EASY</button>
+                <br/><br/>
+                
+                <button id="startButton" class="button" onclick="start()">START</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

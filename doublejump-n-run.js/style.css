@@ -1,0 +1,239 @@
+html {
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+body {
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    font-size:1em;
+    font-family:"Source Sans Pro", sans-serif;
+    color:#555555;
+    background-color:#eee;
+    overflow:hidden;
+    transition:background-color, 0.3s
+}
+
+.button {
+    border:2px solid #555555;
+    color:#555;
+    background-color:rgba(0,0,0,0);
+    transition-duration:0.2s;
+}
+
+.button:active {
+    color:#FFFFFF;
+    background-color:rgb(183,183,183);;
+    transform:scale(1.2, 1.2);
+}
+
+
+/*MENU*/
+#overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.3);
+}
+
+#menu {
+    position:fixed;
+    top:0;
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    text-align:center;
+    background-color:#FFFFFF;
+    animation:menuShow 1s;
+}
+
+@keyframes menuShow {
+    from {top:-200%}
+}
+
+#menuContainer {
+    position:relative;
+    top:0;
+    left:0;
+    margin:150px auto 0;
+    padding:0;
+    height:100%;
+}
+
+#switchTouchButton {
+    position:fixed;
+    top:0;
+    right:0;
+    width:25px;
+    height:25px;
+    animation-name:fadeIn;
+    animation-duration:1s;
+}
+@keyframes fadeIn{
+    from {opacity:0}
+}
+
+.modeButton {
+    width:100px;
+    height:30px;
+    padding:5px;
+    border:0;
+    background-color:rgba(0,0,0,0);
+    font-size:1em;
+    transition-duration:0.3s;
+}
+
+.modeButton:active, .selectedMode {
+    outline:none;
+    transform:scale(1.5, 1.5);
+}
+
+#menuScore {
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+#startButton {
+    width:220px;
+    height:40px;
+    padding:5px;
+    font-size:1.25em;
+    border: 2px solid gold;
+    border-radius: 8px;
+}
+
+
+/*Touch controls*/
+#touchControlsTable {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:10%;
+}
+
+.touchControls {
+    font-size:2em;
+    text-align:center;
+    transition:border, 0.3s
+}
+
+
+/*GAME*/
+#field {
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    transition:translate, 0.05s;
+}
+
+#ground {
+    position:fixed;
+    top:50%;
+    left:0;
+    width:100%;
+    height:5px;
+    background-color:#777777;
+    transition:background-color, 0.3s
+}
+
+#UITable {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+.UIText {
+    text-align:center;
+    transition:color, 0.3s
+}
+
+@media only screen and (min-width:400px) {
+    .controlsText {
+        font-size:3em;
+    }
+    .UIText {
+        font-size:2em;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .controlsText {
+        font-size:2em;
+    }
+    .UIText {
+        font-size:1.5em;
+    }
+}
+
+.controlsText {
+    position:fixed;
+    top:50%;
+    right:0px;
+    height:100px;
+    line-height:100px;
+    margin:0px;
+    margin-right:10%;
+    transition:color, 0.3s
+}
+
+#controlsTextTop {
+    margin-top:-100px;
+}
+
+.player {
+    position:fixed;
+    top:50%;
+    left:15%;
+    width:40px;
+    height:40px;
+    transition:background-color 0.3s;
+}
+
+#playerTop {
+    margin-top:-40px;
+    background-color:#5555FF;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+#playerBottom {
+    margin-top:5px;
+    background-color:#FF5555;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.obstacle {
+    position:fixed;
+    top:50%;
+    left:100%;
+    width:2%;
+    height:30px;
+    background-color:#FF5555;
+    animation-name:obsMove;
+    animation-duration:2s;
+    animation-timing-function:linear;
+    animation-fill-mode:forwards;
+}
+
+.topObs {
+    margin-top:-30px;
+}
+
+.bottomObs {
+    margin-top:5px;
+}
+
+@keyframes obsMove {
+    to {left:-20%;}
+}
