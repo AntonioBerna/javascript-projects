@@ -1,4 +1,4 @@
-# CalcolatoreResistenze
+# resistors.js
 
 Demo: 
 
